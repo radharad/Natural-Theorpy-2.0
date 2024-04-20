@@ -9,13 +9,13 @@ This is a simple website built using HTML, CSS, and JavaScript, Bootstrap and jQ
 
 ## Features:
 1. Responsive Design:
-   . The template is fully responsive and adapts to different screen sizes.
+    The template is fully responsive and adapts to different screen sizes.
 2. Services:
-   . Showcase your spa services with images, descriptions, and pricing.
+    Showcase your spa services with images, descriptions, and pricing.
 3. About:
-   . Display a gallery of spa facilities, treatments, and amenities.
+    Display a gallery of spa facilities, treatments, and amenities.
 4. Contact Form:
-   . Allow visitors to book appointments or inquire about services via the contact form.
+    Allow visitors to book appointments or inquire about services via the contact form.
 
 ## Contact Information:
 For any inquiries or feedback, please email me at komalsatpute950@gmail.com
