@@ -1,0 +1,1607 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gideon+Roman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.common--header{
+    font-family: "Dancing Script", cursive;
+    color: var(--main-color);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+color: #616161;
+font-size: 17px;
+}
+
+
+:root{
+--black-color:#000000;
+--white-color:#ffffff;
+--main-color:#7E8446;
+}
+
+.home-section,
+.about-section,
+.programs-section,
+.ayurveda-life-section,
+.specialized-treatment-section,
+.testimonial-section,
+.appointment-section,
+.treatment-section,
+.membership-section,
+.team-section,
+.footer-section,
+.business-section,
+.contact-section,
+.payment-section{
+    overflow-x: hidden;
+}
+
+.btn{
+    border: none;
+    background-color:var(--main-color);
+    color: var(--white-color);
+    border-radius: 0%;
+    padding: 15px 30px;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+.btn:hover{  
+    background-color: #6e752c;
+    color: var(--white-color);
+    transition: 0.3s ease-in-out;
+}
+
+/* Banner Section Start */
+
+.banner-section{
+    background: linear-gradient(rgba(3, 3, 3, 0.7),rgba(15, 15, 15, 0.7)), url("https://www.swanayurveda.com/wp-content/uploads/2016/05/swan-ayurveda-goa5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--white-color);
+    height: 400px;
+
+
+.container{
+    position: relative;
+    top: 200px;
+
+    div{
+        font-weight: 600;
+        font-size: 18px;
+
+        a{
+            color: var(--main-color);
+        }
+    }
+}
+}
+
+.banner-section h1{
+font-size: 50px;
+font-weight: 600;
+}
+
+
+/* Banner Section End */
+
+
+/* Nav Section Start */
+
+.header-area {
+    background-image: linear-gradient(45deg, black, transparent),url('/images/footer-pattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-color);
+    z-index:-1;
+    color: var(--white-color);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .navbar-area {
+    /* background: rgba(0,0,0,.3); */
+    border-bottom: 1px solid var(--black-color);
+  }
+
+  .site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a.site-logo {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+.site-navbar ul li a {
+    color: #fff;
+    padding: 30px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+  }
+  .site-navbar ul li a::before,
+  .site-navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 25px;
+    background-color: white;
+    transition: width 0.3s;
+  } 
+
+  .site-navbar ul li a:hover{
+    color: #e6eea4;
+  }
+
+  .site-navbar ul li a::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .site-navbar ul li a::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .site-navbar ul li a:hover::before,
+  .site-navbar ul li a:hover::after {
+    width: 60%;
+  }
+ 
+  .nav-toggler {
+    border:none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+  }
+
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .login a,
+  .register a{
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding: 10px 20px!important;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+  }
+
+  .login a:hover,
+  .register a:hover{
+    background-color: var(--white-color);
+    color: var(--main-color);
+  }
+ 
+/* Nav Section End */
+
+/* Home Section Start */
+
+.home-section{
+   .head{
+    -webkit-animation:bounce-in-top 3s infinite both;animation:bounce-in-top 3s infinite both
+   }
+
+        .text-center{
+            padding-top:250px;
+            color: var(--white-color);
+            font-family: "Gideon Roman", serif;
+        }
+
+        h2{
+            font-size: 45px;
+        }
+
+        h3{
+            -webkit-animation:vibrate-1 1.5s linear infinite both;animation:vibrate-1 1.5s linear infinite both
+        }
+
+.slick-slide img {
+    display: block;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+}
+@-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+@-webkit-keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-1px,1px);transform:translate(-1px,1px)}40%{-webkit-transform:translate(-1px,-1px);transform:translate(-1px,-1px)}60%{-webkit-transform:translate(1px,1px);transform:translate(1px,1px)}80%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)}100%{-webkit-transform:translate(0);transform:translate(0)}}@keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-1px,1px);transform:translate(-1px,1px)}40%{-webkit-transform:translate(-1px,-1px);transform:translate(-1px,-1px)}60%{-webkit-transform:translate(2px,2px);transform:translate(1px,1px)}80%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)}100%{-webkit-transform:translate(0);transform:translate(0)}}
+
+.home-section-one{
+    background-image: url('https://tattvaspa.com/wp-content/uploads/2023/11/Banner-1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 640px;
+}
+
+.home-section-two{
+    background: linear-gradient(rgba(3, 3, 3, 0.7),rgba(15, 15, 15, 0.7)), url('https://www.krya.in/wp-content/uploads/2021/06/Pada-abhaynaga-cover-photo-scaled.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 640px;
+  }
+
+.home-section-three{
+    background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)), url('https://static.vecteezy.com/system/resources/thumbnails/007/463/947/original/low-angle-of-girl-bare-feet-jumping-and-playing-on-water-puddles-on-the-raining-day-pouring-rain-on-the-street-side-walking-path-way-fun-time-splashing-water-jumping-goofy-around-care-free-vibe-video.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 640px;
+  }
+
+.home-section-four{
+    background-image: url('https://tattvaspa.com/wp-content/uploads/2023/09/Banner-4.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 640px;
+}
+
+.home-section{
+
+    .slick-prev{
+        z-index: 90;
+        position: absolute;
+        top: 388px;
+        left: 20px;
+        background-color: transparent;
+        color:var(--white-color);
+        border: none;
+     }
+    
+     .slick-next{
+         z-index: 90;
+         position:absolute;
+          /* bottom: 268px; */
+          bottom: 193px;
+         right: 20px;
+         background-color: transparent;
+         color:var(--white-color);
+         border: none;
+      }
+      .slick-prev,
+      .slick-next{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+     .slick-prev i,
+     .slick-next i{
+         font-size: 60px;
+        
+     }
+    }
+
+/* Home Section End */
+
+/* About Section Start */
+
+.about-section{
+    background-image: url('https://shathayu.com/wp-content/uploads/2023/11/bg-hero-fix-2@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px 0px;
+
+    p{
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+
+    .social-number{
+       border-left: 3px solid var(--main-color);
+       padding-left: 6px;
+
+        .number-card{
+            background-color: var(--main-color);
+            color: var(--white-color);
+            padding: 30px 0px; 
+            margin-top: 5px;
+        }
+    }
+    sup{
+            color: var(--hover-color);
+            font-size: 22px;
+            font-weight: 600;
+    }
+    
+    .count{
+        font-weight: bold;
+        font-size: 60px!important;
+    }
+    .section-common--title{
+        font-size: 25px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* About Section End */
+
+/* Program Section Start */
+
+.programs-section{
+    margin: 100px 0px;
+
+    .program-card{
+        height: 400px;
+        margin-top: 10px;
+    }
+
+    .hover-card{
+        color: var(--black-color);
+        padding:30px;
+        text-align: center;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+
+        img{
+            margin-bottom: 20px;
+            -webkit-animation:wobble-hor-bottom 10s infinite alternate both;animation:wobble-hor-bottom 10s infinite alternate both;
+        }
+
+        div{
+            text-align: justify;
+        }
+    }
+
+    .program-card:hover .hover-card{
+        opacity: 1;
+    }
+    .program-card:hover{
+       background-color: var(--main-color);
+       color: var(--black-color)!important;
+       background-image: none;
+       opacity: 0.5;
+    }
+
+    .info{
+        background-color: var(--main-color);
+        color: var(--white-color);
+        padding: 30px;
+        text-align: center;
+        height: 150px;
+
+        h5{
+            font-size: 28px;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .border-b{
+            border-bottom: 1px solid var(--white-color);
+            margin: 10px 0px;
+            opacity: 0.5;
+        }
+    }
+
+    .common--header{
+        margin-bottom: 50px;
+    }
+
+
+    .program-card-one{
+        background-image: url('https://ik.imagekit.io/tvlk/blog/2020/03/shutterstock-desktop.jpg?tr=dpr-2,w-675');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .program-card-two{
+        background-image: url('https://theraj.com/wp-content/uploads/2017/09/article-image7.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .program-card-three{
+        background-image: url('https://theraj.com/wp-content/uploads/2017/09/article-image5.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .program-card-four{
+        background-image: url('https://static.wixstatic.com/media/c8ccba_efe0fc8011324bb5bf04568e5b7a55ed~mv2.jpg/v1/fill/w_578,h_260,al_c,lg_1,q_80,enc_auto/c8ccba_efe0fc8011324bb5bf04568e5b7a55ed~mv2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .program-card-five{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHt89Bl59BEP1U2218LHkZDrzpNB6vee-poctVvj9B7gr30VO_7Rx_kJwI0NRNrsN2nvY&usqp=CAU');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .program-card-six{
+        background-image: url('https://blueterra.in/wp-content/uploads/2023/10/Ayarvedic-Spa-Men-Women-7.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+   
+}
+
+@-webkit-keyframes wobble-hor-bottom{0%,100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}30%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}45%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}75%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}@keyframes wobble-hor-bottom{0%,100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}30%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}45%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}75%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}
+
+/* Program Section End */
+
+/* Life Of Ayurveda Section Start */
+
+.ayurveda-life-section{
+    background-image: url('https://www.vedawellness.org/wp-content/uploads/2016/04/parallax-decor.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+
+    .common--header{
+        line-height: 65px;
+    }
+
+    p{
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/* Life Of Ayurvda Section End */
+
+/* specialized Treatment Section Start */
+
+.specialized-treatment-section{
+    margin: 100px 0px;
+
+    .row{
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .image-container:hover .overlay-content {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+
+    .image {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    .overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:var(--main-color);
+        color: #fff;
+        opacity: 0;
+        transition:transform 0.5s ease;
+        transform: rotate(360deg) scale(0);
+        transform-origin: center center;
+        text-align: center;
+    }
+
+    .overlay-content h4 {
+        font-family: "Dancing Script", cursive;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .overlay-content p {
+      color: var(--white-color);
+      padding:0px 20px 0px 20px;
+    }
+
+}
+
+/* specialized Treatment Section End */
+
+
+/* Testimonial Section Start */
+
+.testimonial-section{
+    background: linear-gradient(rgba(3, 3, 3, 0.6),rgba(15, 15, 15, 0.6)), url('https://www.krishnayurveda.com/images/background/image-3.jpg');
+        color: var(--white-color);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 100px 0px;
+    height: 500px;
+
+    .testimonial-card{
+        padding-left: 400px;
+        padding-right: 400px;
+        margin: auto;
+        padding-top: 50px;
+        
+        .para{
+            margin: 30px 0px;
+        }
+
+    }
+
+    .blocks{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    .slick-prev{
+        z-index: 90;
+        position: absolute;
+        top: 38px;
+        right: 130px;
+        background-color: transparent;
+        color:var(--white-color);
+        border: none;
+        opacity: 0.5;
+     }
+
+     .slick-prev:hover{
+        opacity: 1;
+     }
+    
+     .slick-next{
+         z-index: 90;
+         position:absolute;
+          /* bottom: 268px; */
+          bottom: 421px;
+         right: 80px;
+         background-color: transparent;
+         color:var(--white-color);
+         border: none;
+      }
+      .slick-prev,
+      .slick-next{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 40px;
+         width: 40px;
+         border-radius: 50%;
+         background-color: var(--main-color);
+      }
+     .slick-prev i,
+     .slick-next i{
+         font-size: 20px;
+        
+     }
+
+}
+
+/* Testimonial Section End */
+
+
+/* Appointment Section Start */
+
+.appointment-section{
+    background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)), url('https://shathayu.com/wp-content/uploads/2023/11/Ayurveda.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 100px 0px;
+    padding: 100px 0px;
+
+    h2{
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        margin-bottom: 40px;
+        color: var(--white-color);
+    }
+
+    .appointment-content{
+        text-align: justify;
+        color: var(--white-color);
+    }
+
+    p{
+        margin: 30px 0px;
+        color: var(--white-color);
+    }
+
+    .appointment-icon{
+        padding: 17px;
+        background-color: var(--hover-color);
+        border-radius: 50%;
+        cursor: pointer;
+
+        i{
+            color: var(--white-color);
+            font-size: 20px;
+        }
+    }
+
+    .appointment-icon:hover{
+        background-color: var(--main-color);
+    }
+
+}
+
+.appointment-form .btn{
+    border: 2px solid var(--white-color);
+    font-size: 22px;
+} 
+
+.appointment-form form {
+    background-color:var(--main-color);
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form label {
+    display: block!important;
+    margin-bottom: 8px;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.appointment-form input, .appointment-form select {
+    width: 100%!important;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box!important;
+    border: 1px solid #ccc;
+}
+.appointment-form .btn{
+    background-color: var(--main-color);
+}
+.appointment-form .btn:hover{
+    background-color:#6e752c;
+}
+
+/* Appointment Section End */
+
+/* Treatment Section Start */
+
+.treatment-section{
+    background-color: #F5F5F5;
+    position: relative;
+    padding: 100px 0px;
+
+    .flower img{
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        top:-140px;
+        right: -130px;
+    }
+
+    .treatment-card{
+        border: 2px solid var(--main-color);
+        border-radius: 12px;
+        padding: 30px;
+        transform: translateZ(20px);
+        transition: 0.3s ease-in-out;
+        margin-top: 10px;
+    }
+
+    .treatment-card:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    img{
+        height: 70px;
+        width: 70px;
+    }
+
+    p{
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        margin: 20px 0px 10px 0px;
+    }
+}
+
+/* Treatment Section End */
+
+
+/* Membership Section Start */
+
+.membership-section{
+    /* background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)), url('https://img.freepik.com/free-photo/beautiful-woman-smiling-lying-grass_23-2148072150.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698537600&semt=ais'); */
+    background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)), url('https://img.freepik.com/premium-photo/beautiful-young-woman-relaxing-spa-salon-white-light-background-spa-concept_39730-586.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 100px 0px 0px 0px;
+    padding: 50px 0px;
+    color: var(--white-color);
+
+    .off{
+        height: 200px;
+        width: 200px;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white-color);
+
+        sub{
+          font-weight: 600;
+          font-size: 17px;
+        }
+    }
+
+    .heading span{
+        color: var(--main-color);
+    }
+}
+
+/* Membership Section End */
+
+/* Team Section Start */
+
+.team-section{
+    background-image: url('https://shathayu.com/wp-content/uploads/2023/11/bg-hero-fix-2@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0px;
+    cursor: grab;
+
+    .team-card{
+        position: relative;
+        margin: 0px 5px;
+    }
+
+    .team-content{
+        position: absolute;
+        background-color:rgba(0, 0, 0, 0.9);
+        opacity: 0.5;
+        bottom: 0;
+        left: 0;
+        font-weight: bold;
+        color: var(--white-color);
+        padding:5px 30px;
+        text-align: center;
+    }
+
+}
+
+/* Team Section End */
+
+/* Payment Section Start */
+
+.payment-section{
+    width: 530px;
+    margin: auto;
+    padding:100px 0px;
+    position: relative;
+  
+    .border-d{
+      border: 3px dotted #616161;
+      padding:5px 20px;
+      margin-bottom: 30px;
+      width: 90%;
+      text-align: start;
+      color:rgb(80, 80, 245);
+      font-weight: 600;
+    }
+  
+    input{
+      background-color: transparent;
+    }
+  
+    .d-flex button{
+      background: none;
+      border: none;
+    }
+    
+    .fa-copy{
+      margin-bottom: 30px;
+      font-size: 30px;
+      color:rgb(80, 80, 245);
+      cursor: pointer;
+    }
+  
+    .common--subheader{
+      margin-bottom: 50px;
+    }
+  
+    .qr-code img{
+      margin: 20px 0px;
+    }
+    h5{
+     text-align: start;
+     font-weight: 650;
+    }
+   .btn{
+    width: 100%;
+    margin: auto;
+   }
+  
+   .payment-content{
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+  
+  }
+  
+
+  .payment-banner{
+    background: linear-gradient(rgba(3, 3, 3, 0.7),rgba(15, 15, 15, 0.7)),url('https://www.daysmart.com/spa/wp-content/uploads/sites/7/2023/09/credit-card-spa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: var(--white-color);
+    height: 400px;
+
+
+  .container{
+    position: relative;
+    top: 200px;
+
+    div{
+        font-weight: 600;
+        font-size: 18px;
+
+        a{
+            color: var(--main-color);
+        }
+    }
+}
+}
+
+.payment-banner h1{
+font-size: 50px;
+font-weight: 600;
+}
+  
+  /* Payment Section End */
+
+/* Business Section Start */
+.business-section{
+    padding:100px 0px;
+}
+.business-section i{
+    background-color: var(--white-color);
+    padding: 15px;
+    border-radius: 50%;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.business-section button{
+    padding: 13px 30px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    font-size: 20px;
+    border-radius: 40px;
+    margin: 50px 0px;
+    -webkit-animation:heartbeat 3s ease-in-out infinite both;animation:heartbeat 3s ease-in-out infinite both
+}
+
+.business-section button:hover{
+  background-color: #6e752c;
+}
+
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+.business-section .common--main-header{
+    font-size: 40px;
+    padding: 100px 0px 0px 0px;
+}
+  
+  /* Business Section End */
+
+/* Contact Section Start */
+
+.contact-section{
+    margin: 100px 0px 0px 0px;
+
+    p{
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .appointment-icon{
+        background-color: var(--main-color);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        color: var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+.contact-section .appointment-form{
+    background-color: var(--main-color);
+}
+.contact-section .appointment-form #serviceForm{
+    padding: 30px;
+
+    .btn{ 
+        border: none;
+        font-size: 18px;
+    }
+}
+
+.contact-section .footer-first-content i{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+
+.contact-section .appointment-form form {
+    background-color:#ddf5ce;
+    padding: 0px;
+    box-shadow:none
+}
+
+.contact-section .appointment-form label {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.contact-section .appointment-form textarea{
+    width: 100%!important;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box!important;
+    border: 1px solid #ccc;
+}
+
+.contact-banner{
+  background-image:url('https://www.4sconsult.com/assets/images/banner-contact-us.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 100% 100%;
+  color: var(--white-color);
+  height: 400px;
+
+
+.container{
+  position: relative;
+  top: 200px;
+
+  div{
+      font-weight: 600;
+      font-size: 18px;
+
+      a{
+          color: var(--main-color);
+      }
+  }
+}
+}
+
+.contact-banner h1{
+font-size: 50px;
+font-weight: 600;
+}
+
+/* Contact Section End */
+
+/* Footer Section Start */
+
+.footer-section{
+    background-image: linear-gradient(45deg, black, transparent),url('/images/footer-pattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-color);
+    z-index:-1;
+    color: var(--white-color);
+    padding: 100px 0px 0px 0px;
+
+
+    h5{
+        margin-bottom: 30px;
+    }
+    li{
+        margin-bottom: 20px;
+    }
+    a,i{
+        cursor: pointer;
+    }  
+
+    i{
+        color: var(--main-color);
+    }
+}
+
+.footer-first-content i{
+    background-color: var(--white-color);
+    color: var(--main-color);
+    font-size: 20px;
+    padding: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.footer-last-content .last-icon{
+        padding: 13px;
+        font-weight: bold;
+        background-color: var(--white-color);
+        border-radius: 50%;
+        color: var(--main-color);
+        font-size: 20px;
+}
+
+.last-head{
+    font-size: 20px;
+}
+
+/* Footer Section End */
+
+/* scroll to top button Start*/
+#myBtn{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 99999;
+    cursor: pointer;
+  }
+  .scrolltop{
+    float: right;
+  }
+  .scrolltop i{
+    color:#6e752c;
+    font-size: 60px;
+  }
+/* scroll to top button End */
+
+/* Scrollbar Section Start */
+  
+  /* Width */
+  ::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track{
+      background: #ddf5ce;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+   background: #ddf5ce; 
+   border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover{
+      background:var(--main-color);
+  }
+  /* Scrollbar Section End */
+  
+  /* text selection color start */
+  
+  ::-moz-selection { /* Code for Firefox */
+    background:var(--main-color);
+    color: #fff;
+  }
+  
+  ::selection {
+    background:var(--main-color);
+    color: #fff;
+  }
+  
+  /* text selection color end */
+
+  /* Call Section Start */
+
+.call img{
+    position: fixed;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 20px;
+    right: 0;
+    z-index: 1000;
+    -webkit-animation:flicker-1 5s linear infinite both;animation:flicker-1 5s linear infinite both
+}
+
+
+@-webkit-keyframes flicker-1{0%,100%{opacity:1}41.99%{opacity:1}42%{opacity:0}43%{opacity:0}43.01%{opacity:1}47.99%{opacity:1}48%{opacity:0}49%{opacity:0}49.01%{opacity:1}}@keyframes flicker-1{0%,100%{opacity:1}41.99%{opacity:1}42%{opacity:0}43%{opacity:0}43.01%{opacity:1}47.99%{opacity:1}48%{opacity:0}49%{opacity:0}49.01%{opacity:1}}
+
+  /* Call Section End */
+
+/* Login section Start */
+.bgLogin{
+  width: 100%;
+  background-image: linear-gradient(45deg, #50d1c0, #122926),url(/public/images/bglogin.jpeg);
+  position: absolute;
+  height: 100%;
+}
+.login-16{
+   background-color: #000000;
+   z-index: 999;
+   min-height: 84vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   overflow: hidden;
+   position: relative;
+}
+input{
+   padding: 5px 5px 15px 30px; 
+}
+.card{
+   position: relative;
+   overflow: hidden;
+}
+
+.card span:nth-child(5){
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height:3px;
+   background: linear-gradient(to right, transparent, white);
+   animation: animate_one 2s linear infinite;
+}
+
+@keyframes animate_one{
+   0%{
+       transform: translateX(-100%);
+   }
+   100%{
+       transform: translateX(100%);
+   }
+}
+
+.card span:nth-child(6){
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 3px;
+   height:100%;
+   background: linear-gradient(to bottom, transparent, white);
+   animation: animate_two 2s linear infinite;
+   animation-delay: 1s;
+}
+
+@keyframes animate_two{
+   0%{
+       transform: translateY(-100%);
+   }
+   100%{
+       transform: translateY(100%);
+   }
+}
+
+.card span:nth-child(3){
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height:3px;
+   background: linear-gradient(to left, transparent, white);
+   animation: animate_three 2s linear infinite;
+}
+
+@keyframes animate_three{
+   0%{
+       transform: translateX(100%);
+   }
+   100%{
+       transform: translateX(-100%);
+   }
+}
+
+.card span:nth-child(4){
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 3px;
+   height:100%;
+   background: linear-gradient(to top, transparent, white);
+   animation: animate_four 2s linear infinite;
+   animation-delay: 1s;
+}
+
+@keyframes animate_four{
+   0%{
+       transform: translateY(100%);
+   }
+   100%{
+       transform: translateY(-100%);
+   }
+}
+
+@media only screen and (min-width:200px) and (max-width:767px){
+.logopage{
+   display: none;
+}
+}
+
+/* Login section end */
+/* Register Section start */
+.bgRegister{
+   background-image: linear-gradient(45deg, #50d1c0, #122926),url(/public/images/bglogin.jpeg);
+   position: absolute;
+   width: 100%;
+   min-height: 100vh;
+   padding-left: 300px;
+   padding-right: 300px;
+
+}
+.RegisterElement{
+    background-color:#000000 ;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+    overflow: hidden;
+    
+}
+input{
+  padding: 5px 5px 15px 30px; 
+}
+.inner{
+    padding: 20px;
+}
+/* Register section end */
+/* forget section start */
+.bgForget{
+   background-image: linear-gradient(45deg, #50d1c0, #122926),url(/public/images/bglogin.jpeg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.Forget{
+   background-color: #000000;
+   z-index: 999;
+   min-height: 30vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   overflow: hidden;
+   position: relative;
+}
+input{
+   padding: 5px 5px 15px 30px; 
+}
+@media only screen and (min-width:200px) and (max-width:767px){
+   .logopage{
+       display: none;
+   }
+}
+/* forget section end */
+
+
+/* Mobile Responsiveness Start */
+
+@media only screen and (min-width:200px) and (max-width:767px){
+
+      .navbar .container {
+        max-width: 720px;
+        z-index: 9999;
+      }
+      .nav-toggler{
+        display: block;
+      }
+      .site-navbar {
+        min-height: 60px;
+      }
+      .site-navbar .open{
+          z-index: 6000;
+      }
+      .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid #444;
+        background-color: var(--main-color);
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+      }
+      .site-navbar ul li {
+        width: 100%;
+        text-align: center;
+      }
+      .site-navbar ul li a {
+        padding:25px 20px;
+        font-size: 20px;
+      }
+      .site-navbar ul li a:hover {
+        background-color: rgba(255,255,255,.1);
+      }
+      .site-navbar ul.open {
+        max-height: 100vh;
+        overflow: visible;
+      }
+
+      .about-section{
+        margin: 50px 0px;
+
+        .count{
+            font-size: 30px!important;
+        }
+        .section-common--title{
+            text-align: center;
+        }
+        .number-card{
+            height: 150px;
+        }
+      }
+
+      .ayurveda-life-section{
+        background: linear-gradient(rgba(3, 3, 3, 0.7),rgba(15, 15, 15, 0.7)), url('https://www.vedawellness.org/wp-content/uploads/2016/04/parallax-decor.png');
+        background-position:right;
+        padding-top:30px;
+
+        .common--header{
+            color: var(--white-color);
+ 
+        }
+
+        p{
+            color: var(--white-color);
+ 
+        }
+    }
+
+      .programs-section{
+        margin: 50px 0px;
+      }
+  
+      .common--header{
+        font-size: 40px;
+        line-height: 50px!important;
+      }
+      .specialized-treatment-section{
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .overlay-content{
+            left: auto;
+        }
+      }
+      .flower img{
+        width: 150px!important;
+        height: 150px!important;
+      }
+      .testimonial-section{
+        background: linear-gradient(rgba(3, 3, 3, 0.7),rgba(15, 15, 15, 0.7)), url('https://www.krishnayurveda.com/images/background/image-3.jpg');
+   
+      
+        .testimonial-card{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    .appointment-section{
+        background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)), url('https://shathayu.com/wp-content/uploads/2023/11/Ayurveda.webp');
+        margin: 50px 0px;
+        padding: 50px 0px;
+
+        .appointment-form{
+            margin-top: 10px;
+        }
+    }
+    .membership-section{
+        margin: 50px 0px 0px 0px;
+
+        .d-flex{
+            flex-direction: column;
+        }
+    }
+
+    .team-section{
+        padding: 50px 0px;
+    }
+
+    .footer-section h5{
+        margin-top: 30px;
+    }
+
+    .payment-section{
+        width: 100%;
+      
+        .bitcoin img{
+          left: 152px;
+          bottom: 315px;
+        }
+      }
+
+
+  }
+   
+    /* Mobile Responsiveness End */
+  
+    /* Tab Responsiveness Start */
+  
+    @media only screen and (min-width:768px) and (max-width:1024px){
+      .navbar .container {
+        max-width: 720px;
+        z-index: 9999;
+      }
+      .nav-toggler{
+        display: block;
+      }
+      .site-navbar {
+        min-height: 60px;
+      }
+      .site-navbar .open{
+          z-index: 6000;
+      }
+      .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid #444;
+        background-color: var(--main-color);
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+      }
+      .site-navbar ul li {
+        width: 100%;
+        text-align: center;
+      }
+      .site-navbar ul li a {
+        padding:25px 20px;
+        font-size: 20px;
+      }
+      .site-navbar ul li a:hover {
+        background-color: rgba(255,255,255,.1);
+      }
+      .site-navbar ul.open {
+        max-height: 100vh;
+        overflow: visible;
+      }
+  
+      .specialized-treatment-section{
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .overlay-content{
+            left: auto;
+        }
+      }
+      .flower img{
+        width: 160px!important;
+        height: 160px!important;
+      }
+      
+      .appointment-section .appointment-form{
+        margin-top: 10px;
+      }
+
+      .testimonial-section{
+        .testimonial-card{
+          padding-left: 200px;
+          padding-right: 200px;
+        }
+      }
+
+      
+.payment-section{
+    width: 100%;
+   
+  .bitcoin img{
+    left: 348px;
+    bottom: 315px;
+  }
+  }
+
+    }  
+  
+   /* Tab Responsiveness End */
+
+  
+  
+  
