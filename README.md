@@ -1,7 +1,7 @@
 # Project Name: My Awesome Website
 
 ## Description:
-This is a simple website built using HTML, CSS, and JavaScript, Bootstrap and jQuery to showcase my skills.
+This is a Natural Theorpy website built using HTML, CSS, and JavaScript and Modern Libraries to showcase my skills.
 
 ## Installation Instructions:
 1. Clone the repository: `git clone https://github.com/radharad/Natural-Theorpy-2.0 `
